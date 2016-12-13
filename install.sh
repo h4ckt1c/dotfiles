@@ -7,6 +7,7 @@ if [ ! -d $HOME/.vim ]; then
     mkdir $HOME/.vim
 fi
 ln -si `pwd`/dotvim/colors $HOME/.vim/colors
+ln -si `pwd`/vimrc $HOME/.vimrc
 
 if [ -f $HOME/.bashrc ]; then
 	mv -i $HOME/.bashrc $HOME/.bashrc.bak
