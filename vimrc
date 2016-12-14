@@ -31,7 +31,8 @@ set stl+=\ %m       " add modified flag
 set stl+=%=\ %l/%L  " add row numbers
 set stl+=%=\ 0x%02B " add ascii value of char
 
-set cryptmethod=blowfish2
+""" blowfish2 requires vim 7.4.399 or higher!
+set cryptmethod=blowfish
 
 """ mappings - insertmode
 inoremap jk <Esc>l  " map jk to esc
