@@ -34,13 +34,15 @@ set stl+=%=\ 0x%02B " add ascii value of char
 """ blowfish2 requires vim 7.4.399 or higher!
 set cryptmethod=blowfish
 
+""" general mappings
+noremap H ^
+noremap L $
+
 """ mappings - insertmode
 inoremap jk <Esc>l  " map jk to esc
 
 """ mappings - normalmode
 nnoremap . :
-nnoremap H ^
-nnoremap L $
 nnoremap <C-o> <C-w>gf
 nnoremap <F5> ggg?G``
 nnoremap <C-t> :Texplore<CR>
@@ -66,6 +68,8 @@ autocmd FileType vim            noremap <buffer> , :s /^/" /<CR>
 autocmd FileType vim            noremap <buffer> ; :s /^" //<CR>
 autocmd FileType html           noremap <buffer> , :s /^\(.*\)$/<!-- \1 -->/<CR>
 autocmd FileType html           noremap <buffer> ; :s /^<!-- \(.*\) -->$/\1/<CR>
+autocmd FileType css            noremap <buffer> , :s /^\(.*\)$/\/\* \1 \*\//<CR>
+autocmd FileType css            noremap <buffer> ; :s /^\/\* \(.*\) \*\/$/\1/<CR>
 
 """ execute files with F9
 autocmd FileType python         noremap <F9> :!python2 %<CR>
