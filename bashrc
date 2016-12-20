@@ -127,3 +127,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+alias "hardbase=mplayer http://lw3.mp3.tb-group.fm:8080/hb.mp3"
+alias "housetime=mplayer http://lw3.mp3.tb-group.fm:8080/ht.mp3"

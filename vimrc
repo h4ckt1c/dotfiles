@@ -39,7 +39,8 @@ noremap H ^
 noremap L $
 
 """ mappings - insertmode
-inoremap jk <Esc>l  " map jk to esc
+inoremap jk <Esc>l
+
 
 """ mappings - normalmode
 nnoremap . :
