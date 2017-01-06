@@ -2,7 +2,14 @@
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red 
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
+""" Settings for vimwiki:
+"   See https://github.com/vimwiki/vimwiki
 syntax on
+filetype plugin on
+set nocompatible
+
+execute pathogen#infect()
+
 colorscheme wombat256mod	" set colorscheme
 
 highlight TabLine cterm=NONE ctermbg=blue ctermfg=white
