@@ -35,6 +35,8 @@ set statusline=     " clear statusline
 set stl+=%F         " add fullpath
 set stl+=\ %y       " add recognized filetype
 set stl+=\ %m       " add modified flag
+set stl+=\ \ \ \    " a few spaces as seperator
+set stl+=%{strftime('%H:%M')}
 set stl+=%=\ %l/%L  " add row numbers
 set stl+=%=\ 0x%02B " add ascii value of char
 
