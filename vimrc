@@ -29,6 +29,7 @@ set autochdir       " change directory when switching between tabs
 set incsearch       " search as you type
 set ignorecase      " ignore case when searching
 set smartcase       " except case is given
+set noswapfile      " Because I don't like it
 
 set laststatus=2    " enable statusline always
 set statusline=     " clear statusline
@@ -100,3 +101,5 @@ function! ToggleFileType()
         set filetype=html
     endif
 endfunction
+
+let g:calendar_google_calendar = 1
