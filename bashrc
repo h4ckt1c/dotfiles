@@ -3,6 +3,7 @@ if [ -f $HOME/.bashrcext ]; then
 fi
 
 export TERM=xterm-256color
+export EDITOR=vim
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
