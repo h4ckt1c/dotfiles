@@ -129,6 +129,8 @@ if ! shopt -oq posix; then
 fi
 alias "hardbase=mplayer http://lw3.mp3.tb-group.fm:8080/hb.mp3"
 alias "housetime=mplayer http://lw3.mp3.tb-group.fm:8080/ht.mp3"
+alias "gs=git status"
+alias "gc=git commit"
 
 function vc {
     CMDLINE=$(history 2 | head -1 | awk -F " " '{print $NF}')
