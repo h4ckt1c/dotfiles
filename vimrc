@@ -54,7 +54,6 @@ inoremap jk <Esc>l
 
 """ mappings - normalmode
 nnoremap . :
-nnoremap <C-o> <C-w>gf
 nnoremap <F5> ggg?G``
 nnoremap <C-t> :Texplore<CR>
 nnoremap <Space> za
