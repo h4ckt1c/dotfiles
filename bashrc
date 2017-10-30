@@ -134,6 +134,7 @@ alias "gs=git status"
 alias "gc=git commit"
 alias "gl=git log"
 alias "gd=git diff"
+alias "gr=git remote -v"
 
 function vc {
     CMDLINE=$(history 2 | head -1 | awk -F " " '{print $NF}')
