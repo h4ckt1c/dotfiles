@@ -1,3 +1,4 @@
+set t_Co=256
 " highlight trailing whitespaces (must be before colorscheme)
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red 
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
@@ -38,6 +39,10 @@ set stl+=\ %y       " add recognized filetype
 set stl+=\ %m       " add modified flag
 set stl+=\ \ \ \    " a few spaces as seperator
 set stl+=%{strftime('%H:%M')}
+set stl+=\ \ \ \    " a few spaces as seperator
+set stl+=Clipboard:\ %{strpart(@\",0,20)}
+set stl+=\ \ \ \    " a few spaces as seperator
+set stl+=Search:\ %{strpart(@\/,0,20)}
 set stl+=%=\ %l/%L  " add row numbers
 set stl+=%=\ 0x%02B " add ascii value of char
 
@@ -55,7 +60,7 @@ inoremap jk <Esc>l
 """ mappings - normalmode
 nnoremap . :
 nnoremap <F5> ggg?G``
-nnoremap <C-t> :Texplore<CR>
+"nnoremap <C-t> :Texplore<CR>
 nnoremap <Space> za
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
