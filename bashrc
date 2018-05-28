@@ -141,3 +141,4 @@ function vc {
     [[ -f $CMDLINE ]] && $EDITOR $CMDLINE
     [[ -d $CMDLINE ]] && cd $CMDLINE
 }
+export PATH=$PATH:/usr/local/go/bin

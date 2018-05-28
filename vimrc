@@ -31,6 +31,7 @@ set incsearch       " search as you type
 set ignorecase      " ignore case when searching
 set smartcase       " except case is given
 set noswapfile      " Because I don't like it
+set backspace=2     " Fix backspace problem in self compiled vim
 
 set laststatus=2    " enable statusline always
 set statusline=     " clear statusline
