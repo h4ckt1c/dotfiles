@@ -31,7 +31,12 @@ set incsearch       " search as you type
 set ignorecase      " ignore case when searching
 set smartcase       " except case is given
 set noswapfile      " Because I don't like it
+<<<<<<< HEAD
 set backspace=2     " Fix backspace problem in self compiled vim
+=======
+set undofile        " Prepare for persistent undo
+set backspace=2     " Fix strange behaviour (unsetted bs) in custom compiled vim
+>>>>>>> 49b85b9ba767947e36b2c8f5a70d761b5ede2369
 
 set laststatus=2    " enable statusline always
 set statusline=     " clear statusline
