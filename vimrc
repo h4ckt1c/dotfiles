@@ -93,6 +93,10 @@ autocmd FileType vim            noremap <F9> :source %<CR>
 autocmd FileType sh             noremap <F9> :!bash %<CR>
 autocmd FileType php            noremap <F9> :!php %<CR>
 
+""" Esc -> (terminal)normal mode
+tnoremap jk <C-w>N
+tnoremap <Esc> <C-w>N
+
 """ toggle filetype html/php with F8
 autocmd FileType html,php       noremap <F8> :call ToggleFileType()<CR>
 
