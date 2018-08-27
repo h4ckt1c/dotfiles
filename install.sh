@@ -6,6 +6,9 @@ fi
 if [ ! -d $HOME/.vim ]; then
     mkdir $HOME/.vim
 fi
+if [ ! -d $HOME/.vim/undo ]; then
+    mkdir $HOME/.vim/undo
+fi
 if [ -d $HOME/.vim/colors ]; then
     mv -i $HOME/.vim/colors $HOME/.vim/colors.bak
 fi
